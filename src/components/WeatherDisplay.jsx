@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-const = WeatherDisplay() => {
+function WeatherDisplay() {
   return (
     <Card>
       <Card.Img variant="top" src="holder.js/100px180" />
