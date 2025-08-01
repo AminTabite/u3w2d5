@@ -1,5 +1,4 @@
 import NavbarMeteo from "./components/NavbarMeteo";
-import Searchbar from "./components/Searchbar";
 import Home from "./components/Home";
 import WeatherDisplay from "./components/WeatherDisplay";
 import "bootstrap/dist/css/bootstrap.min.css";
