@@ -32,6 +32,10 @@ const WeatherDisplay = () => {
   };
 
   const Getfivedayforecast = () => {
+    {
+      /* fetch per  recuperare il meteo dei 5 giorni */
+    }
+
     fetch(endpointfivedays)
       .then((response) => {
         if (response.ok) {
@@ -52,6 +56,9 @@ const WeatherDisplay = () => {
       .catch((err) => {
         console.log("Errore caricamento previsioni:", err);
       });
+    {
+      /* mi sono preso manualmente gli oggetti che segnavano l'ora alle 18 di tutti e 5 i giorni e li ho mappati sotto la card del meteo giornaliero, é la "soluzione dei poveri lo so" ma non riuscivo col tempo*/
+    }
   };
 
   useEffect(() => {
