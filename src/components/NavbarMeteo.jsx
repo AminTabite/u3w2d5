@@ -11,8 +11,16 @@ function NavbarMeteo() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link className="Nav.Link text-decoration-none text-info" to="/">
+            <Link
+              className="Nav.Link text-decoration-none text-info me-4"
+              to="/">
               Home
+            </Link>
+
+            <Link
+              className="Nav.Link text-decoration-none text-info me-4"
+              to="/aboutus">
+              About us
             </Link>
           </Nav>
         </Navbar.Collapse>

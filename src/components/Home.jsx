@@ -15,7 +15,7 @@ function Home() {
   const handleSearch = (e) => {
     e.preventDefault();
     if (city.trim() !== "") {
-      navigate(`/details/${city}`); // permette alla pagina con la città nell’URL
+      navigate(`/details/${city}`); // toglie automaticamente lo spazio se il cliente lo mette involontariamente
     }
   };
 
@@ -27,8 +27,8 @@ function Home() {
       <h5 className="m2- text-info text-center">
         Cerca il meteo della cittá che ti serve qui sotto!
       </h5>
-      <Container>
-        <Row className="justify-content-center m-2 mt-5">
+      <Container fluid className="min-vh-100 d-flex flex-column">
+        <Row className="justify-content-center m-2 mt-5 flex-grow-1">
           <Col xs={12} md={6} lg={6}>
             <Form
               className="d-flex justify-content-center"
