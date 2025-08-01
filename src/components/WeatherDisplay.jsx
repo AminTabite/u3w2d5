@@ -64,6 +64,10 @@ const WeatherDisplay = () => {
         <Col xs={10} md={10} lg={12}>
           <Card className="d-flex mb-5 ">
             <Card.Body>
+              <img
+                src={`https://openweathermap.org/img/wn/${meteo}@2x.png`}
+                alt="weather icon"
+              />
               <Card.Title>Today in the {meteo.name}</Card.Title>
               <Card.Text>Current Temperature: {meteo.main?.temp}C°</Card.Text>
               <Card.Text>Min Temperature: {meteo.main?.temp_min}C°</Card.Text>
@@ -88,8 +92,8 @@ const WeatherDisplay = () => {
                 <img
                   src={`https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`}
                   alt="weather icon"
-                />
-
+                />{" "}
+                //immagine presa da openweathermap
                 <Card.Title> {day.dt_txt.split(" ")[0]}</Card.Title>
                 <Card.Text> Min Temperature: {day.main?.temp_min}C°</Card.Text>
                 <Card.Text> Max Temperature: {day.main?.temp_max}C°</Card.Text>
